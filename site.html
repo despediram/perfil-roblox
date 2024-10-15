@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogar Roblox</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+  
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      color: white;
+    }
+
+   
+    .container {
+      text-align: center;
+      max-width: 600px;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+      animation: fadeIn 2s ease;
+    }
+
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    
+    .play-button {
+      margin-top: 20px;
+      padding: 15px 40px;
+      font-size: 24px;
+      border: none;
+      border-radius: 50px;
+      background: linear-gradient(45deg, #6dd5ed, #2193b0);
+      color: white;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .play-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 20px rgba(109, 213, 237, 0.7);
+    }
+
+    
+    .neon-text {
+      font-size: 32px;
+      font-weight: bold;
+      text-shadow: 
+        0 0 5px #00d4ff,
+        0 0 10px #00d4ff,
+        0 0 20px #00d4ff,
+        0 0 40px #0dcaf0,
+        0 0 80px #0dcaf0;
+    }
+
+   
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="neon-text">ME SIGA NO ROBLOX</h1>
+  </p>clique abaixo para ser redirecionado para meu perfil.</p>
+    <button class="play-button" onclick="redirecionarJogo()">Ver perfil</button>
+    <footer>
+      <p> Taurus profile </p>
+    </footer>
+  </div>
+
+  <script>
+    function redirecionarJogo() {
+      const jogoId = "1793308781"; 
+      const url = `https://www.roblox.com/users/1793308781/profile`;
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
